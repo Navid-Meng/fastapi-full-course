@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Export</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.7;
+            color: #1f2328;
+            background: #ffffff;
+        }
+        h1, h2, h3, h4, h5, h6 { margin-top: 1.5em; margin-bottom: 0.5em; font-weight: 600; }
+        h1 { font-size: 2rem; border-bottom: 2px solid #d0d7de; padding-bottom: 0.3em; }
+        h2 { font-size: 1.5rem; border-bottom: 1px solid #d0d7de; padding-bottom: 0.2em; }
+        code { font-family: 'JetBrains Mono', monospace; background: #f6f8fa; padding: 0.2em 0.4em; border-radius: 4px; }
+        pre { background: #24292e; color: #e1e4e8; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+        pre code { background: transparent; padding: 0; }
+        blockquote { border-left: 4px solid #0969da; background: #f6f8fa; padding: 0.75em 1em; margin: 1em 0; border-radius: 0 8px 8px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+        th, td { padding: 0.75rem; border: 1px solid #d0d7de; text-align: left; }
+        th { background: #f6f8fa; }
+        a { color: #0969da; }
+        img { max-width: 100%; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .mermaid { text-align: center; padding: 1rem; background: #f6f8fa; border-radius: 8px; }
+        @media print { body { max-width: none; } .page-break { page-break-after: always; } }
+    </style>
+</head>
+<body>
+<h1 id="heading-0">Lesson 01: FastAPI Overview</h1>
+<h2 id="heading-1">Welcome to the Course 🎉</h2>
+<p>Welcome to this <strong>FastAPI Full Course</strong>.<br>In this course, you will learn how to build <strong>modern, fast, and production-ready APIs</strong> using <strong>Python and FastAPI</strong>.</p>
+<p>This first lesson gives you a <strong>big picture overview</strong> of FastAPI before we start writing real code.</p>
+<hr>
+<h2 id="heading-2">What You Will Learn in This Lesson</h2>
+<p>By the end of this lesson, you will understand:</p>
+<ul>
+<li>What FastAPI is</li>
+<li>Why FastAPI is popular</li>
+<li>What FastAPI is used for</li>
+<li>How FastAPI compares to other frameworks</li>
+<li>What we will build in this course</li>
+</ul>
+<hr>
+<h2 id="heading-3">What is FastAPI?</h2>
+<p><strong>FastAPI</strong> is a modern Python web framework used to build <strong>APIs</strong>.</p>
+<p>It is designed to be:</p>
+<ul>
+<li>🚀 Very fast</li>
+<li>🧠 Easy to learn</li>
+<li>🔒 Safe with built-in validation</li>
+<li>📄 Well-documented automatically</li>
+</ul>
+<p>FastAPI is commonly used to build:</p>
+<ul>
+<li>REST APIs</li>
+<li>Backend services</li>
+<li>Microservices</li>
+<li>Backend for web &amp; mobile apps</li>
+</ul>
+<hr>
+<h2 id="heading-4">Why is FastAPI So Popular?</h2>
+<p>FastAPI became popular because it solves many problems developers had with older frameworks.</p>
+<h3 id="heading-5">Key advantages:</h3>
+<ul>
+<li><p><strong>High performance</strong><br>Built on Starlette and Pydantic.<br>One of the fastest Python frameworks.</p>
+</li>
+<li><p><strong>Easy to write</strong><br>Clean and readable syntax.<br>Less boilerplate code.</p>
+</li>
+<li><p><strong>Automatic API documentation</strong><br>Swagger UI and ReDoc are generated automatically.<br>No extra setup required.</p>
+</li>
+<li><p><strong>Strong data validation</strong><br>Uses Python type hints.<br>Fewer runtime errors.</p>
+</li>
+</ul>
+<hr>
+<h2 id="heading-6">FastAPI vs Other Python Frameworks</h2>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Flask</td>
+<td>Small apps, learning basics</td>
+</tr>
+<tr>
+<td>Django</td>
+<td>Full-stack web applications</td>
+</tr>
+<tr>
+<td>FastAPI</td>
+<td>APIs, microservices, modern backends</td>
+</tr>
+</tbody></table>
+<p>FastAPI is <strong>not a replacement</strong> for everything, but it is an <strong>excellent choice for APIs</strong>.</p>
+<hr>
+<h2 id="heading-7">How FastAPI Works (High Level)</h2>
+<p>FastAPI works by:</p>
+<ol>
+<li>Receiving an HTTP request (GET, POST, PUT, DELETE)</li>
+<li>Validating the data automatically</li>
+<li>Executing your Python function</li>
+<li>Returning a JSON response</li>
+</ol>
+<p>You write <strong>normal Python functions</strong>, and FastAPI handles the rest.</p>
+<hr>
+<h2 id="heading-8">What We Will Build in This Course</h2>
+<p>Throughout this course, you will learn by building real examples, including:</p>
+<ul>
+<li>Simple APIs</li>
+<li>CRUD APIs</li>
+<li>APIs with validation</li>
+<li>APIs with databases</li>
+<li>Authentication using JWT</li>
+<li>A complete <strong>To-Do List API</strong> (final project)</li>
+</ul>
+<p>By the end of this course, you will be able to:</p>
+<blockquote>
+<p>Build and design real-world FastAPI backends confidently 💪</p>
+</blockquote>
+<hr>
+<h2 id="heading-9">Do Not Worry About Setup Yet</h2>
+<p>In this lesson:</p>
+<ul>
+<li>❌ No installation</li>
+<li>❌ No coding</li>
+<li>❌ No configuration</li>
+</ul>
+<p>We focus only on <strong>understanding concepts</strong>.</p>
+<p>In the <strong>next lesson</strong>, we will:</p>
+<ul>
+<li>Install FastAPI</li>
+<li>Create our first FastAPI app</li>
+<li>Run a server locally</li>
+</ul>
+<hr>
+<h2 id="heading-10">Next Lesson 🚀</h2>
+<p>➡️ <strong>Lesson 02: Installing FastAPI &amp; First API</strong></p>
+<hr>
+<h3 id="heading-11">💡 Tip for Students</h3>
+<p>If something feels unclear right now, that’s normal.<br>Everything will become clear once we start coding step by step.</p>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true });</script>
+</body>
+</html>

@@ -97,7 +97,6 @@ Throughout this course, you will learn by building real examples, including:
 - APIs with validation
 - APIs with databases
 - Authentication using JWT
-- A complete **To-Do List API** (final project)
 
 By the end of this course, you will be able to:
 
